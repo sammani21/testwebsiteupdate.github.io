@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal website</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <script >
+        function myFunction() {
+        alert("My email address is abc@gmail.com");
+        }
+        const email = document.getElementById("mail");
+        email.addEventListener("input", (event) => {
+        if (email.validity.typeMismatch) {
+        email.setCustomValidity("I am expecting an e-mail address!");
+        email.reportValidity();
+        } 
+        else {
+        email.setCustomValidity("");
+        }
+        });
+    </script>
+    
+    <img class="first" src="first.png" alt="my profile">
+    <br><br>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="secondpg.html">About me...</a></li>
+        <li><a href="thirdpg.html">Contact me...</a></li>
+    </ul>
+
+    <div class="container">
+        <img src="backgroundimage.jpg" alt="background">
+        <div class="topleft"><h2>"I want to make beautiful things,<br> even if nobody cares, as opposed to ugly things. <br>That's my intent"</h2>
+            <h3 class="pos_right">-Saul Bass-</h3>
+        </div>
+    </div>
+    <br>
+
+    <div class="footer">
+
+        <p>Let's look about me:</p>
+
+        <div>
+            <form>
+                <label for="mail">
+                    <p>I would like you to have your e-mail address:</p>
+                </label>
+
+                <input type="email" id="mail" name="mail" />
+                <button>Submit</button>
+                <br><br>
+
+                <button onclick="myFunction()">Active</button>
+            </form>
+        </div>
+        <br>
+
+        <div class="center">
+            <a href="secondpg.html" class="next">Next >></a>
+        </div>
+
+    </div>
+
+    <p>@2022 All right reserved</p>
+    
+</body>
+</html>

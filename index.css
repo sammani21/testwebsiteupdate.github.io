@@ -1,0 +1,378 @@
+/*Common Styles*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(21, 22, 15);
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 50px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: rgb(7, 46, 238);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 10px;
+    align-items: center;
+}
+  
+a:hover {
+    background-color: rgb(63, 17, 232);
+    color: black;
+}
+  
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+} 
+
+.footer {
+    padding: 10px; 
+    text-align: center; 
+    background: rgb(18, 16, 16)
+}
+
+.next {
+    background-color: rgb(4, 5, 18);
+    color: white;
+}
+
+p{
+    color:blueviolet;
+    font-size:15px;
+    font-family:arial;
+    text-align:center;
+}
+
+/*First Page*/
+.first{
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.container {
+    position: relative;
+}
+  
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 200px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(12, 12, 12);
+}
+
+h3.pos_right {
+    position: relative;
+    left:400px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Second page*/
+.top{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    right:auto;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: rgb(4, 2, 20);
+}
+
+.center1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(46, 21, 232);
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+header {
+    background-color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(27, 24, 24);
+    font-weight: bold;
+}
+  
+nav {
+    float:left;
+    width: 15%;
+    height: 300px;
+    background: rgb(255, 252, 252);
+    padding: 10px;
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.article2{
+    float: left;
+    padding: 20px;
+    width: 50%;
+    background-color:white;
+    height: 300px; 
+}
+
+.article1{
+    float:right;
+    padding: 20px;
+    width: 50%;
+    background-color:white;
+    height: 300px; 
+}
+  
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+@media (max-width: 600px) {
+    nav, article {
+    width: 100%;
+    height: auto;}
+}
+
+.img1:hover {
+    transform: scaleX(-1);
+}
+
+.mar{
+    color: rgb(208, 14, 14);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-style: initial;
+}
+
+table{
+        border: 1px;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+.container1 {
+    width: 100%; 
+    background-color: #ddd; 
+}
+    
+.skills {
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: white; 
+}
+    
+.html{
+    width: 90%;
+    background-color: #04AA6D;
+} 
+.css {
+    width: 80%; 
+    background-color: #2196F3;
+}        
+.js {
+    width: 65%; 
+    background-color: #f44336;
+} 
+.php {
+    width: 60%; 
+    background-color: #808080;
+} 
+.python{
+    width: 95%;
+      background-color: #04AA6D;
+} 
+.c {
+    width: 75%; 
+    background-color: #2196F3;
+}        
+.c1 {
+    width: 60%; 
+    background-color: #f44336;
+} 
+
+.container2 {
+    position: relative;
+    width: 50%;
+}
+      
+.image {
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+      
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-color: #0c08da;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+      
+.container2:hover .overlay {
+    height: 100%;
+}
+      
+.text {
+    white-space: nowrap; 
+    color: rgb(246, 236, 236);
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+      
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #0c08da;
+    text-align: center;
+    text-decoration: solid;
+    text-shadow: #2196F3;
+}
+
+    /*Third Page*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+      
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+      
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+      
+.container3 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+      
+.column1 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+      
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+      
+@media screen and (max-width: 600px) {
+    .column1, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    }
+}
+
+.my{
+    display: block;
+    border-radius: 50%;
+    width:40%;
+    height:550px;
+}
+
+.my:hover {
+    transform: scaleX(-1);
+}
+
+.center2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p1{
+    color:rgb(7, 6, 8);
+    font-size:16px;
+    font-family:arial;
+    text-align:center;
+    font-weight: bold;
+}
